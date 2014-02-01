@@ -112,14 +112,14 @@ static NSString *reuseIdentifier;
 }
 
 #pragma mark Swipe animation methods
-- (void)animateMainViewTo:(CGPoint)point withDuration:(float)duration
+- (void)animateMainViewTo:(CGPoint)point withDuration:(float)duration withBouce:(BOOL)bounce
 {
     CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"position"];
     [animation setFromValue:[NSValue valueWithCGPoint:CGPointMake(_mainView.center.x, _mainView.center.y)]];
     [animation setToValue:[NSValue valueWithCGPoint:CGPointMake(point.x, point.y)]];
     [animation setDuration:duration];
     _mainView.layer.position = CGPointMake(point.x, point.y);
-    //[animation setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.5 :1.8 :1 :1]];
+    if (bounce) [animation setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.5 :1.8 :1 :1]];
     [_mainView.layer addAnimation:animation forKey:@"position"];
 }
 
@@ -140,7 +140,7 @@ static NSString *reuseIdentifier;
 
     if (fabsf(translation.x) < fabsf(translation.y))
     {
-        return;
+        //return;
     }
 
     _touchPoint = newLocation;
@@ -171,7 +171,7 @@ static NSString *reuseIdentifier;
     }
     else if (_mainView.center.x < _rightConstraint && _mainView.center.x >= _rightConstraint - CONSTRAINT_PADDING && _mainView.center.x < self.contentView.center.x)
     {
-        [self animateMainViewTo:CGPointMake(_rightConstraint, self.contentView.center.y) withDuration:0.3];
+        [self animateMainViewTo:CGPointMake(_rightConstraint, self.contentView.center.y) withDuration:0.2 withBouce:YES];
     }
     else if (_mainView.center.x < _leftConstraint && _mainView.center.x > self.contentView.center.x)
     {
@@ -179,22 +179,26 @@ static NSString *reuseIdentifier;
     }
     else if (_mainView.center.x > _leftConstraint && _mainView.center.x <= _leftConstraint + CONSTRAINT_PADDING && _mainView.center.x > self.contentView.center.x)
     {
-        [self animateMainViewTo:CGPointMake(_leftConstraint, self.contentView.center.y) withDuration:0.3];
+        [self animateMainViewTo:CGPointMake(_leftConstraint, self.contentView.center.y) withDuration:0.2 withBouce:YES];
     }
 }
 
 - (void)resetOtherCells
 {
     NSArray *cells = [self.getParentTableView visibleCells];
-    for (SwipeableTableViewCell *cell in cells)
+    for (UITableViewCell *cell in cells)
     {
-        if (cell != self) [cell resetPan];
+        if (cell != self && [cell isKindOfClass:[SwipeableTableViewCell class]])
+        {
+            SwipeableTableViewCell *swipeableCell = (SwipeableTableViewCell *)cell;
+            [swipeableCell resetPan];
+        }
     }
 }
 
 - (void)resetPan
 {
-    [self animateMainViewTo:CGPointMake(self.contentView.center.x, self.contentView.center.y) withDuration:0.15];
+    [self animateMainViewTo:CGPointMake(self.contentView.center.x, self.contentView.center.y) withDuration:0.15 withBouce:NO];
 }
 
 #pragma mark Button touch methods
