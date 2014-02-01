@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F14006E5D8ACC3A06A3E7A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1408231CD7D94C316D1458 /* AppDelegate.m */; };
+		2F14024441CBEC39891F0CFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1400753A8E0C9E3526B56D /* main.m */; };
+		2F1402C013F7F818D5385A2A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F14084B381A564551E80D96 /* XCTest.framework */; };
+		2F140400E48338C5C91A8F6B /* SwipeableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F140E8EC2AB4B256A335550 /* SwipeableTableViewController.m */; };
+		2F1405202F944CAE4CB3D4D7 /* SwipeableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F140D648A560A76350070A5 /* SwipeableTableViewCell.m */; };
+		2F14053AAE9FEE7F5D36CF6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1403D1DC456ACA88517843 /* Foundation.framework */; };
+		2F1405AA75E486EE8303EEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F140F1B1C04F162E86E737E /* InfoPlist.strings */; };
+		2F14068D3CB846B59AC07854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1403D1DC456ACA88517843 /* Foundation.framework */; };
+		2F1408E5E38AF1861118A813 /* SwipableTableCellTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1404DDD49ED78430CEDDD3 /* SwipableTableCellTestTests.m */; };
+		2F1409CCE202FA056FAEC864 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F140C34D1D9E5D9ED51DB58 /* UIKit.framework */; };
+		2F140AB38A1A6E9598C93AEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1401F29C54726F02E80F80 /* CoreGraphics.framework */; };
+		2F140DCAC4E51B8E65403866 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F140183BD908E70360B1F7F /* Images.xcassets */; };
+		2F140F417DD00E72BB68F23C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F140DF44B766991DE02A20D /* InfoPlist.strings */; };
+		2F140F57A2735A3CD25C2720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F140C34D1D9E5D9ED51DB58 /* UIKit.framework */; };
+		DAB1FDDF189A056A00B5D48F /* shape.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB1FDDD189A056A00B5D48F /* shape.png */; };
+		DAB1FDE0189A056A00B5D48F /* shape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB1FDDE189A056A00B5D48F /* shape@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F1409AC662928D3BDBC91EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F140503496B2DB6E812C0BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F140D0D8B232377673CB700;
+			remoteInfo = SwipableTableCellTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F1400753A8E0C9E3526B56D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F140081D4EF8109982E7627 /* SwipableTableCellTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SwipableTableCellTest-Info.plist"; sourceTree = "<group>"; };
+		2F14017B25ACFACEEB315EE2 /* SwipableTableCellTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipableTableCellTest-Prefix.pch"; sourceTree = "<group>"; };
+		2F140183BD908E70360B1F7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F1401A7CAAA4D05603C5010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F1401F29C54726F02E80F80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F14028C136E5570130DC7A7 /* SwipeableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeableTableViewCell.h; sourceTree = "<group>"; };
+		2F1403A2CDA6D33638F4C024 /* SwipeableTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeableTableViewController.h; sourceTree = "<group>"; };
+		2F1403D1DC456ACA88517843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F1404DDD49ED78430CEDDD3 /* SwipableTableCellTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipableTableCellTestTests.m; sourceTree = "<group>"; };
+		2F1405F8581F4DCA5756D3DE /* SwipableTableCellTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "SwipableTableCellTestTests-Info.plist"; sourceTree = "<group>"; };
+		2F1408231CD7D94C316D1458 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F14084B381A564551E80D96 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2F14088834EA42993FBCCB31 /* SwipableTableCellTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipableTableCellTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F140C34D1D9E5D9ED51DB58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F140D648A560A76350070A5 /* SwipeableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeableTableViewCell.m; sourceTree = "<group>"; };
+		2F140D725F5493748F8640F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F140E8EC2AB4B256A335550 /* SwipeableTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeableTableViewController.m; sourceTree = "<group>"; };
+		2F140EB9DFA11ECC013032A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F140F00E815527463BA0C9A /* SwipableTableCellTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipableTableCellTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB1FDDD189A056A00B5D48F /* shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shape.png; sourceTree = "<group>"; };
+		DAB1FDDE189A056A00B5D48F /* shape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shape@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F14023F5E73187CC1DF1E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1402C013F7F818D5385A2A /* XCTest.framework in Frameworks */,
+				2F14053AAE9FEE7F5D36CF6F /* Foundation.framework in Frameworks */,
+				2F140F57A2735A3CD25C2720 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F1403BE5C5EDB0425FDEAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F14068D3CB846B59AC07854 /* Foundation.framework in Frameworks */,
+				2F140AB38A1A6E9598C93AEE /* CoreGraphics.framework in Frameworks */,
+				2F1409CCE202FA056FAEC864 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F1400191D488D0A8BCF6778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1403D1DC456ACA88517843 /* Foundation.framework */,
+				2F1401F29C54726F02E80F80 /* CoreGraphics.framework */,
+				2F140C34D1D9E5D9ED51DB58 /* UIKit.framework */,
+				2F14084B381A564551E80D96 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F14020F0F4D5C986AD6EBD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F1405F8581F4DCA5756D3DE /* SwipableTableCellTestTests-Info.plist */,
+				2F140DF44B766991DE02A20D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F140455E3679E48631BF47E /* SwipableTableCellTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F14020F0F4D5C986AD6EBD9 /* Supporting Files */,
+				2F1404DDD49ED78430CEDDD3 /* SwipableTableCellTestTests.m */,
+			);
+			path = SwipableTableCellTestTests;
+			sourceTree = "<group>";
+		};
+		2F1409833C0E56039F87616C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F140081D4EF8109982E7627 /* SwipableTableCellTest-Info.plist */,
+				2F140F1B1C04F162E86E737E /* InfoPlist.strings */,
+				2F1400753A8E0C9E3526B56D /* main.m */,
+				2F14017B25ACFACEEB315EE2 /* SwipableTableCellTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F140D9511210AD4ADE34DB1 /* SwipableTableCellTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F1409833C0E56039F87616C /* Supporting Files */,
+				2F1401A7CAAA4D05603C5010 /* AppDelegate.h */,
+				2F1408231CD7D94C316D1458 /* AppDelegate.m */,
+				2F140183BD908E70360B1F7F /* Images.xcassets */,
+				DAB1FDDD189A056A00B5D48F /* shape.png */,
+				DAB1FDDE189A056A00B5D48F /* shape@2x.png */,
+				2F1403A2CDA6D33638F4C024 /* SwipeableTableViewController.h */,
+				2F140E8EC2AB4B256A335550 /* SwipeableTableViewController.m */,
+				2F14028C136E5570130DC7A7 /* SwipeableTableViewCell.h */,
+				2F140D648A560A76350070A5 /* SwipeableTableViewCell.m */,
+			);
+			path = SwipableTableCellTest;
+			sourceTree = "<group>";
+		};
+		2F140D95BECA400886AD6971 = {
+			isa = PBXGroup;
+			children = (
+				2F140DE69C31418FBBDCD4C3 /* Products */,
+				2F1400191D488D0A8BCF6778 /* Frameworks */,
+				2F140D9511210AD4ADE34DB1 /* SwipableTableCellTest */,
+				2F140455E3679E48631BF47E /* SwipableTableCellTestTests */,
+			);
+			sourceTree = "<group>";
+		};
+		2F140DE69C31418FBBDCD4C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F140F00E815527463BA0C9A /* SwipableTableCellTest.app */,
+				2F14088834EA42993FBCCB31 /* SwipableTableCellTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F1401648ABF5DB8AAA14E7C /* SwipableTableCellTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F14067DB35DE79698428C4F /* Build configuration list for PBXNativeTarget "SwipableTableCellTestTests" */;
+			buildPhases = (
+				2F140BDE5B1CAC86B04B4314 /* Sources */,
+				2F14023F5E73187CC1DF1E89 /* Frameworks */,
+				2F140C8FE2C73ACA5BC15E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F140662FDEA1B83DF3112E4 /* PBXTargetDependency */,
+			);
+			name = SwipableTableCellTestTests;
+			productName = SwipableTableCellTestTests;
+			productReference = 2F14088834EA42993FBCCB31 /* SwipableTableCellTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F140D0D8B232377673CB700 /* SwipableTableCellTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F140F71A5DCC020D8D2F8EB /* Build configuration list for PBXNativeTarget "SwipableTableCellTest" */;
+			buildPhases = (
+				2F140943E2208A0C540AFF94 /* Sources */,
+				2F1403BE5C5EDB0425FDEAD2 /* Frameworks */,
+				2F14046CEB223405565AE63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipableTableCellTest;
+			productName = SwipableTableCellTest;
+			productReference = 2F140F00E815527463BA0C9A /* SwipableTableCellTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F140503496B2DB6E812C0BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = embinder;
+			};
+			buildConfigurationList = 2F140F053C1992012D3CA178 /* Build configuration list for PBXProject "SwipableTableCellTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F140D95BECA400886AD6971;
+			productRefGroup = 2F140DE69C31418FBBDCD4C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F140D0D8B232377673CB700 /* SwipableTableCellTest */,
+				2F1401648ABF5DB8AAA14E7C /* SwipableTableCellTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F14046CEB223405565AE63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1405AA75E486EE8303EEBD /* InfoPlist.strings in Resources */,
+				DAB1FDDF189A056A00B5D48F /* shape.png in Resources */,
+				DAB1FDE0189A056A00B5D48F /* shape@2x.png in Resources */,
+				2F140DCAC4E51B8E65403866 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F140C8FE2C73ACA5BC15E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F140F417DD00E72BB68F23C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F140943E2208A0C540AFF94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F14024441CBEC39891F0CFC /* main.m in Sources */,
+				2F14006E5D8ACC3A06A3E7A1 /* AppDelegate.m in Sources */,
+				2F140400E48338C5C91A8F6B /* SwipeableTableViewController.m in Sources */,
+				2F1405202F944CAE4CB3D4D7 /* SwipeableTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F140BDE5B1CAC86B04B4314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1408E5E38AF1861118A813 /* SwipableTableCellTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F140662FDEA1B83DF3112E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F140D0D8B232377673CB700 /* SwipableTableCellTest */;
+			targetProxy = 2F1409AC662928D3BDBC91EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F140DF44B766991DE02A20D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F140D725F5493748F8640F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F140F1B1C04F162E86E737E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F140EB9DFA11ECC013032A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F1403685681AD53B95FAFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipableTableCellTest/SwipableTableCellTest-Prefix.pch";
+				INFOPLIST_FILE = "SwipableTableCellTest/SwipableTableCellTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F1405FEE05D63817CBE34AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F140921807A3B333B9FF87B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F140C1218F700CF7E5138C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipableTableCellTest/SwipableTableCellTest-Prefix.pch";
+				INFOPLIST_FILE = "SwipableTableCellTestTests/SwipableTableCellTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2F140EB85585802EA18B17D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipableTableCellTest/SwipableTableCellTest-Prefix.pch";
+				INFOPLIST_FILE = "SwipableTableCellTest/SwipableTableCellTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2F140F6560F6F2811CEDC8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipableTableCellTest/SwipableTableCellTest-Prefix.pch";
+				INFOPLIST_FILE = "SwipableTableCellTestTests/SwipableTableCellTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F14067DB35DE79698428C4F /* Build configuration list for PBXNativeTarget "SwipableTableCellTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F140F6560F6F2811CEDC8C0 /* Release */,
+				2F140C1218F700CF7E5138C7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F140F053C1992012D3CA178 /* Build configuration list for PBXProject "SwipableTableCellTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1405FEE05D63817CBE34AE /* Release */,
+				2F140921807A3B333B9FF87B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F140F71A5DCC020D8D2F8EB /* Build configuration list for PBXNativeTarget "SwipableTableCellTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F140EB85585802EA18B17D9 /* Release */,
+				2F1403685681AD53B95FAFD5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F140503496B2DB6E812C0BD /* Project object */;
+}
